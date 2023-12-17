@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>6packkro Contact Page</title>
+    <link rel="stylesheet" href="css_contact.css">
+</head>
+<body>
+<header>
+    <h1><a class = "logo"><img src="logo.jpg" alt="6Packro Logo">6Packro</a></h1>
+
+    <nav class = "navigation">
+        <a href="6packro_main.html">Home</a>
+        <a href="6packro_workout.html">Workout</a>
+        <a href="6packro_food.html">Food</a>
+        <a href="6packro_blog.html">Blog</a>
+        <a href="6packro_contact.html">Contact</a>
+        <button class="btnLogin-popup" onclick="window.location.href = '6packro_register.html' ">Login</button>
+
+    </nav>
+</header>
+
+<section>
+    <div class="position-box">
+        <h2>Nous Trouver</h2>
+        <p>
+            12 Av. Léonard de Vinci<br>
+            92400 Courbevoie<br>
+            France
+        </p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10491.968950124392!2d2.2364918!3d48.8964851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e665002d2c6665%3A0x9595552cb384bd7!2sP%C3%B4le%20L%C3%A9onard%20de%20Vinci!5e0!3m2!1sfr!2sfr!4v1699991338414!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <form class="contact-form" action="#">
+        <div class="contact-box">
+            <h2>Nous Contacter</h2>
+            <div class="input-box">
+                <label for="email">Votre email</label>
+                <input type = "email" required id="email" name = "email">
+            </div>
+            <div class="input-box">
+                <label for="firstname">Votre prenom</label>
+                <input type = "text" required id = "firstname" name = "firstname">
+            </div>
+            <div class="message-box">
+                <label for="message">Votre message</label>
+                <textarea required id = "message" name = "message"></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer votre Email</button>
+        </div>
+    </form>
+</section>
+</body>
+</html>

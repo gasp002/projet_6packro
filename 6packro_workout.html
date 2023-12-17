@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>6packkro workout page</title>
+    <link rel="stylesheet" href="css_workout.css">
+</head>
+<body>
+<header>
+    <h1><a class = "logo"><img src="logo.jpg" alt="6Packro Logo">6Packro</a></h1>
+
+    <nav class = "navigation">
+        <a href="6packro_main.html">Home</a>
+        <a href="6packro_workout.html">Workout</a>
+        <a href="6packro_food.html">Food</a>
+        <a href="6packro_blog.html">Blog</a>
+        <a href="6packro_contact.html">Contact</a>
+        <button class="btnLogin-popup" onclick="window.location.href = '6packro_register.html' ">Login</button>
+
+    </nav>
+</header>
+
+<div class="form-container">
+
+    <h2>Add a Workout</h2>
+
+    <form id="workoutForm">
+        <label for="workout">Choose a Workout:</label>
+        <select id="workout" name="workout">
+            <option value="Shoulder Workout">Shoulder Workout</option>
+            <option value="Chest Workout">Chest Workout</option>
+            <option value="Back Workout">Back Workout</option>
+            <option value="Arms Workout">Arms Workout</option>
+            <option value="Abs Workout">Abs Workout</option>
+            <option value="Legs Workout">Legs Workout</option>
+        </select>
+
+        <label for="exercise">Choose an Exercise:</label>
+        <select id="exercise" name="exercise"></select>
+
+        <label for="repetitions">Repetitions:</label>
+        <input type="text" id="repetitions" name="repetitions" placeholder="Enter repetitions">
+
+        <label for="weight">Weight (lbs):</label>
+        <input type="text" id="weight" name="weight" placeholder="Enter weight">
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <input type="submit" value="Log Workout">
+    </form>
+</div>
+
+
+<div class="oldworkout-container">
+    <h2>Check Old Workout</h2>
+    <form id="oldworkoutForm">
+        <label for="dateofoldworkout">Choose the date you want to see your workout from:</label>
+        <input type="date" id="dateofoldworkout" name="dateofoldworkout">
+
+        <input type="submit" value="Show Workout">
+    </form>
+</div>
+<script src="script_main.js" ></script>
+</body>
+
+</html>

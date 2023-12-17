@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("backgroud.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color : darkgoldenrod;
+    user-select: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.logo img {
+    width: 80px; /* Adjust the size of the logo image as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Adjust the spacing between the logo text and image */
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left : 0;
+    bottom:-6px;
+    width: 100%;
+    height: 3px;
+    background: darkgoldenrod;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid darkgoldenrod;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: darkgoldenrod;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover{
+    background: darkgoldenrod;
+    color: black;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: brightness(0.25) blur(20px);
+    justify-content: space-around;
+
+}
+
+.form-container h2{
+    font-size: 2em;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+.form-container form label{
+    color: darkgoldenrod;
+    left: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    margin-bottom: 5px;
+}
+
+.form-container form select{
+    width: 100%;
+    background: transparent;
+    border: darkgoldenrod solid 1px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1em;
+    color: darkgoldenrod;
+    font-weight: 500;
+    padding: 5px 35px 5px 5px;
+}
+
+.form-container form input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: darkgoldenrod;
+    font-weight: 500;
+}
+
+.form-container label,
+.form-container input,
+.form-container select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container select {
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: black;
+    background-color: darkgoldenrod;
+    color: black;
+    cursor: pointer;
+}
+
+.oldfood-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 175px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: brightness(0.25) blur(20px);
+    justify-content: space-around;
+
+}
+
+.oldfood-container h2{
+    font-size: 2em;
+    color: darkgoldenrod;
+    text-align: center;
+}
+
+.oldfood-container form label{
+    color: darkgoldenrod;
+    left: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    margin-bottom: 5px;
+}
+
+.oldfood-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: black;
+    background-color: darkgoldenrod;
+    color: black;
+    cursor: pointer;
+}
+
+.oldfood-container form input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: darkgoldenrod;
+    font-weight: 500;
+}
+
+.oldfood-container label,
+.oldfood-container input {
+    display: block;
+    margin-bottom: 10px;
+}
